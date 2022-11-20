@@ -20,8 +20,8 @@ namespace Ejercicio_02_Tests
         public void GetPathFile_Success()
         {
             var fm = new Ejercicio_02.FileManager();
-            var path = "C:\\Users\\Pablo\\OneDrive - ConcepcióndelUruguay\\UTN CURSADA\\Tercer Año\\Segundo Cuatrimestre\\Taller de Programación\\Guías\\Taller Programacion Guias\\TP04";
-            var validPath = "C:\\Users\\Pablo\\OneDrive - ConcepcióndelUruguay\\UTN CURSADA\\Tercer Año\\Segundo Cuatrimestre\\Taller de Programación\\Guías\\Taller Programacion Guias\\TP04\\ServiceConfiguration.json";
+            var path = "C:\\Users\\santi\\Desktop\\TP4\\Ejercicio02"; //Cambiar dependiendo de quien tenga el archivo
+            var validPath = "C:\\Users\\santi\\Desktop\\TP4\\Ejercicio02\\ServiceConfiguration.json";//Cambiar dependiendo de quien tenga el archivo
             var targetFile = "ServiceConfiguration";
             var pathFile = fm.GetPathFile(targetFile, path);
             Assert.AreEqual(validPath,pathFile);
@@ -30,7 +30,7 @@ namespace Ejercicio_02_Tests
         public void GetConfigFromFile_Success()
         {
             var fm = new Ejercicio_02.FileManager();
-            var path = "C:\\Users\\Pablo\\OneDrive - ConcepcióndelUruguay\\UTN CURSADA\\Tercer Año\\Segundo Cuatrimestre\\Taller de Programación\\Guías\\Taller Programacion Guias\\TP04\\ServiceConfiguration.json";
+            var path = "C:\\Users\\santi\\Desktop\\TP4\\Ejercicio02\\ServiceConfiguration.json"; //Cambiar dependiendo de quien tenga el archivo
             var config = fm.GetConfigFromFile(path);
             Assert.AreEqual(config.GetType().ToString(), "Ejercicio_02.ServiceConfiguration");
         }

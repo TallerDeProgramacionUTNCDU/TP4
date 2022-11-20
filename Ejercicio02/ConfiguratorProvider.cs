@@ -10,7 +10,7 @@ namespace Ejercicio_02
     {
         public Dictionary<string, ConfigurationBase> iCache= new Dictionary<string, ConfigurationBase>();
         public FileManager admin= new FileManager();
-        public static string path= @""; //Ingresar la ruta a la que se accede
+        public static string path= @"C:\Users\santi\Desktop\TP4"; //Ingresar la ruta a la que se accede
         public void DictionarySet()
         {
             var obj1 = new ServiceConfiguration("BaseUrl", "ClientId", "ClientSecret");
